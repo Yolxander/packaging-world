@@ -246,6 +246,35 @@ export function Header() {
                     </div>
                 </div>
             )}
+
+            <style jsx>{`
+              .get-quote-btn {
+                background: linear-gradient(to right, #4f46e5, #3b82f6);
+                padding: 0.5rem 1rem;
+                border-radius: 0.375rem;
+                color: white;
+                border: none;
+                cursor: pointer;
+                transition: background-color 0.3s;
+              }
+              .get-quote-btn:hover {
+                background: linear-gradient(to right, #4338ca, #2563eb);
+              }
+              .link-brush {
+                color: #6b7280;
+                text-decoration: none;
+                transition: color 0.3s;
+              }
+              .link-brush:hover {
+                color: #1f2937;
+              }
+              .hamburger {
+                cursor: pointer;
+              }
+              .hamburger.active {
+                background: rgba(0, 0, 0, 0.1);
+              }
+            `}</style>
         </>
     )
 }
