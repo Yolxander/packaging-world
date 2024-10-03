@@ -12,6 +12,8 @@ body {
   }
 }
 
+
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -75,4 +77,79 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+
+.link-brush {
+  position: relative;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 500;
+  display: inline-block;
+  padding: 0.5rem;
+  transition: color 0.3s ease;
+  z-index: 99;
+  overflow: hidden;
+}
+
+.link-brush::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: black;
+  z-index: -1;
+  transition: left 0.5s ease-in-out;
+}
+
+.link-brush:hover::before {
+  left: 0;
+}
+
+.link-brush:hover {
+  color: white;
+}
+
+/* Get Quote button styling */
+.get-quote-btn {
+  position: relative;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.75rem 1.25rem;
+  border: 2px solid #5e78c9;
+  background-color: transparent;
+  border-radius: 5px;
+  display: inline-block;
+  z-index: 99;
+  overflow: hidden;
+  transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.get-quote-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #5e78c9;
+  z-index: -1;
+  transition: left 0.5s ease-in-out;
+}
+
+.get-quote-btn:hover::before {
+  left: 0;
+}
+
+.get-quote-btn:hover {
+  color: white;
+  background-color: #5e78c9;
+  border-color: #5e78c9;
+}
+
+.quote-container{
+  top: 0px
 }

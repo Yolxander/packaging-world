@@ -8,7 +8,7 @@ export function LocationSection() {
     return (
         <div className="bg-white py-12">
             <div className="container mx-auto px-4">
-                <div className="bg-[#1b4541] text-white rounded-lg shadow-lg p-8 flex items-center">
+                <div className="bg-[#3a4e9d] text-white rounded-lg shadow-lg p-8 flex items-center">
                     <div className="w-1/2 pr-8">
                         <h2 className="text-3xl font-bold mb-4">Visit Our Warehouse</h2>
                         <p className="mb-6">Come by and explore our products in person. We're located in Toronto and open Monday to Friday from 9 AM to 5 PM.</p>

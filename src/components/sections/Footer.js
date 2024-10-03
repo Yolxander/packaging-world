@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button'
 
 export function Footer() {
     return (
-        <footer className="bg-gray-800 text-white py-8">
+        <footer className="bg-white text-black py-8">
             <div className="container mx-auto px-4">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div>
@@ -29,7 +29,7 @@ export function Footer() {
                         <p className="mb-4">Stay updated with our latest offers and products</p>
                         <div className="flex">
                             <Input type="email" placeholder="Your email" className="rounded-r-none" />
-                            <Button className="rounded-l-none">Subscribe</Button>
+                            <Button className="rounded-l-none bg-[#5e78c9] text-white">Subscribe</Button>
                         </div>
                     </div>
                 </div>

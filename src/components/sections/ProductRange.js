@@ -30,7 +30,7 @@ export function ProductRange() {
                         ))}
                     </div>
                     <div className="mt-8 text-center">
-                        <Button size="lg">
+                        <Button className="bg-[#5e78c9]" size="lg">
                             View All Products
                             <ChevronRight className="ml-2 h-5 w-5" />
                         </Button>
