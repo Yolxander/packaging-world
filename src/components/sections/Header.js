@@ -35,6 +35,12 @@ export function Header() {
         setIsMobileMenuOpen(!isMobileMenuOpen) // Toggle mobile menu visibility
     }
 
+    // New function to handle both actions (quote form and closing mobile menu)
+    const handleQuoteButtonClick = () => {
+        toggleQuoteForm();
+        if (isMobileMenuOpen) toggleMobileMenu(); // Close mobile menu if it's open
+    }
+
     return (
         <>
             <header className={`sticky top-0 bg-white shadow-sm transition-all duration-300 z-50 ${isScrolled ? 'py-2' : 'py-4'}`}>
@@ -52,7 +58,6 @@ export function Header() {
                                             className="rounded-md"
                                         />
                                     </div>
-                                    {/* Updated to show Image instead of span */}
                                     {isScrolled ? (
                                         <Image
                                             src="/icon.ico"
@@ -120,7 +125,7 @@ export function Header() {
                         <Link href="#" className="link-brush" onClick={toggleMobileMenu}>
                             Contact Us
                         </Link>
-                        <button onClick={toggleQuoteForm} className="get-quote-btn" onClick={toggleMobileMenu}>
+                        <button onClick={handleQuoteButtonClick} className="get-quote-btn">
                             Get Quote
                         </button>
                     </nav>
@@ -230,9 +235,9 @@ export function Header() {
                                         </button>
                                         <button
                                             type="submit"
-                                            className="px-4 py-2 bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded hover:from-blue-600 hover:to-blue-800 transition-all duration-300"
+                                            className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600 transition-all duration-300"
                                         >
-                                            Send Quote Request
+                                            Submit
                                         </button>
                                     </div>
                                 </>
@@ -241,35 +246,6 @@ export function Header() {
                     </div>
                 </div>
             )}
-
-            <style jsx>{`
-              .get-quote-btn {
-                background: linear-gradient(to right, #4f46e5, #3b82f6);
-                padding: 0.5rem 1rem;
-                border-radius: 0.375rem;
-                color: white;
-                border: none;
-                cursor: pointer;
-                transition: background-color 0.3s;
-              }
-              .get-quote-btn:hover {
-                background: linear-gradient(to right, #4338ca, #2563eb);
-              }
-              .link-brush {
-                color: #6b7280;
-                text-decoration: none;
-                transition: color 0.3s;
-              }
-              .link-brush:hover {
-                color: #1f2937;
-              }
-              .hamburger {
-                cursor: pointer;
-              }
-              .hamburger.active {
-                background: rgba(0, 0, 0, 0.1);
-              }
-            `}</style>
         </>
     )
 }
