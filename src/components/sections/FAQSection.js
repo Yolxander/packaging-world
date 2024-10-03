@@ -24,7 +24,7 @@ export function FAQSection() {
                         <AccordionItem value="item-3">
                             <AccordionTrigger>Can I visit your warehouse to see products in person?</AccordionTrigger>
                             <AccordionContent>
-                                Our warehouse and manufacturing facility is located at 880 Steeprock Drive in Toronto. We're open to the public for visits and inquiries from Monday to Friday, 9 AM to 5 PM. Feel free to stop by and explore our product range in person.
+                                Our warehouse and manufacturing facility is located at 880 Steeprock Drive in Toronto. We are open to the public for visits and inquiries from Monday to Friday, 9 AM to 5 PM. Feel free to stop by and explore our product range in person.
                             </AccordionContent>
                         </AccordionItem>
                     </Accordion>

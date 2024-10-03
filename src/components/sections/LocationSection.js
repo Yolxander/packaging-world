@@ -11,7 +11,7 @@ export function LocationSection() {
                 <div className="bg-[#3a4e9d] text-white rounded-lg shadow-lg p-8 flex items-center">
                     <div className="w-1/2 pr-8">
                         <h2 className="text-3xl font-bold mb-4">Visit Our Warehouse</h2>
-                        <p className="mb-6">Come by and explore our products in person. We're located in Toronto and open Monday to Friday from 9 AM to 5 PM.</p>
+                        <p className="mb-6">Come by and explore our products in person. We are located in Toronto and open Monday to Friday from 9 AM to 5 PM.</p>
                         <div className="flex space-x-4 items-center mb-4">
                             <MapPin className="text-white h-6 w-6" />
                             <p>880 Steeprock Drive, Toronto, ON (North of Sheppard Ave W, off Allen Expressway)</p>
